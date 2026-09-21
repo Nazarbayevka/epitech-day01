@@ -1,0 +1,1 @@
+for item in *; do [ -d "$item" ] && printf '%s/\n' "$item" || printf '%s\n' "$item"; done | sort | paste -sd, -
